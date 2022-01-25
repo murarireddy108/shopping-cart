@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.Shopping-list{
+   display: grid;
+   grid-template-columns:  repeat(4, 1fr);
+   grid-gap:15px;
+} 
+
+
+
+.stars{
+  color: rgb(255, 187, 41);
+}
+button{
+  transition: all 0.3s;
+}
+button:hover{
+  transform: translateY(-3px);
+ }
+
+@media screen and (max-width:768px) {
+  .Shopping-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
